@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 // import alert2 from "../assets/Frame1.svg"
 import alert1 from "../assets/alert1.svg"
 import alert2 from "../assets/alert2.svg"
-import NotificationBar from './NotificationBar';
+
 
 const Home = () => {
 
@@ -57,9 +57,9 @@ const Home = () => {
 
 
         <div className="alert-section w-full h-[20px] sm:h-[25px] md:h-[30px] lg:h-10 bg-[#0C223D] flex items-center ">
-          <div className='relative h-full'>
+          <div className='relative h-full w-[5%]'>
 
-            <img src={alert1} alt="" className='h-[100%] shadow-lg '/>
+            <img src={alert1} alt="" className='h-[100%] shadow-lg object-cover object-right'/>
             <span className=' absolute pl-2 h-full left-0 top-0 flex items-center font-bold'>
               Alert
             </span>
@@ -67,12 +67,12 @@ const Home = () => {
           </div>
           
           
-          <div className='  flex-grow h-full flex items-center  text-white'>  </div>
+          <div className=' w-[90%] h-full  overflow-hidden px-4 text-white '> <span className='h-full flex items-center  truncate'>ameen Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis dolores perferendis, doloribus voluptatem maiores libero debitis deleniti et, nostrum officia commodi asperiores consequuntur dicta aspernatur delectus iure dignissimos! Atque, illo?</span>  </div>
 
           
-          <div className='relative h-full w-20'>
+          <div className='relative h-full w-[5%]'>
 
-            <img src={alert2} alt="" className='h-[100%] shadow-lg w-full object-cover'/>
+            <img src={alert2} alt="" className='h-[100%] shadow-lg w-full object-cover object-left'/>
             <span className=' absolute pr-1 h-full right-0 top-0 flex items-center font-bold'>
               <a href="">View All</a>
             </span>
