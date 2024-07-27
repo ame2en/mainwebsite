@@ -51,11 +51,6 @@
   .slider-image {
     height: 50vh;
   }
-
-  
-  
-
-
 }
 
 .slick-dots {
@@ -82,11 +77,6 @@
   color: #5E5E5E !important;
   opacity: 1 !important;
 }
-
-
-
-
-
 
 /* Remove focus outline on click */
 .slider-container *:focus {
@@ -115,3 +105,6 @@
   }
 
 }
+
+
+
