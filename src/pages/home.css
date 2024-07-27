@@ -1,0 +1,117 @@
+.slider-container {
+  position: relative;
+  width: 100%;
+  
+}
+
+.slider-image {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+
+@media (max-width: 1024px) {
+  .slider-container {
+    height: 70vh; /* Adjust as needed for medium screens */
+  }
+
+  .slider-image {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+    height: 70vh; /* Adjust as needed for small screens */
+  }
+
+  .slider-image {
+    height: 70vh;
+  }
+
+  .slick-dots li button:before {
+    color: white !important;
+    font-size: 8px !important; /* Adjust this value to change the size of the dots */
+    opacity: 0.5 !important; /* Adjust opacity for a bit of transparency */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #5E5E5E !important;
+    opacity: 1 !important;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .slider-container {
+    height: 50vh; /* Adjust as needed for extra small screens */
+  }
+
+  .slider-image {
+    height: 50vh;
+  }
+
+  
+  
+
+
+}
+
+.slick-dots {
+  z-index: 10;
+  position: absolute !important;
+  bottom: 20px !important; /* Adjust this value to move dots higher or lower */
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.slick-dots li {
+  margin: 0 5px !important;
+}
+
+.slick-dots li button:before {
+  color: rgb(255, 255, 255) !important;
+  font-size: 16px !important; /* Adjust this value to change the size of the dots */
+  opacity: 1 !important; /* Adjust opacity for a bit of transparency */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #5E5E5E !important;
+  opacity: 1 !important;
+}
+
+
+
+
+
+
+/* Remove focus outline on click */
+.slider-container *:focus {
+  outline: none !important;
+}
+
+.custom-object-bottom {
+  object-position: bottom !important; /* Ensure it overrides any other styles */
+}
+
+
+
+@media (max-width: 768px) {
+
+  .slick-dots li button:before {
+    font-size: 12px !important; 
+  }
+
+
+}
+
+@media (max-width: 480px) {
+
+  .slick-dots li button:before {
+    font-size: 10px !important; 
+  }
+
+}
