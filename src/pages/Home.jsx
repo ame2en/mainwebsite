@@ -11,7 +11,17 @@ import "slick-carousel/slick/slick-theme.css";
 // import alert2 from "../assets/Frame1.svg"
 import alert1 from "../assets/alert1.svg"
 import alert2 from "../assets/alert2.svg"
+import MarqueeComponent from '../components/MarqueeComponent.jsx';
 
+const text="";
+
+const items = [
+  'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quae ipsam, non hic nesciunt quisquam blanditiis provident quas, saepe ullam ea eum sapiente. Deserunt, error! Quidem officiis inventore consequuntur deserunt!',
+  'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quae ipsam, non hic nesciunt quisquam blanditiis provident quas, saepe ullam ea eum sapiente. Deserunt, error! Quidem officiis inventore consequuntur deserunt!',
+  'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quae ipsam, non hic nesciunt quisquam blanditiis provident quas, saepe ullam ea eum sapiente. Deserunt, error! Quidem officiis inventore consequuntur deserunt!',
+  'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quae ipsam, non hic nesciunt quisquam blanditiis provident quas, saepe ullam ea eum sapiente. Deserunt, error! Quidem officiis inventore consequuntur deserunt!',
+  'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quae ipsam, non hic nesciunt quisquam blanditiis provident quas, saepe ullam ea eum sapiente. Deserunt, error! Quidem officiis inventore consequuntur deserunt!',
+];
 
 const Home = () => {
 
@@ -36,19 +46,15 @@ const Home = () => {
           <Slider {...settings}>
             <div className='relative '>
               <img src={image1} alt="Slide 1" className="slider-image " />
-              {/* <div className='absolute bottom-0 w-full mx-auto h-[30%] text-white bg-gradient-to-t from-[rgba(0,0,0,1)] to-[rgba(0,0,0,0)] flex justify-center items-center'></div> */}
             </div>
             <div className='relative '>
               <img src={image2} alt="Slide 2" className="slider-image " />
-              {/* <div className='absolute bottom-0 w-full mx-auto h-[30%] text-white bg-gradient-to-t from-[rgba(0,0,0,1)] to-[rgba(0,0,0,0)] flex justify-center items-center'></div> */}
             </div>
             <div className='relative '>
               <img src={image3} alt="Slide 3" className="slider-image" />
-              {/* <div className='absolute bottom-0 w-full mx-auto h-[30%] text-white bg-gradient-to-t from-[rgba(0,0,0,1)] to-[rgba(0,0,0,0)] flex justify-center items-center'></div> */}
             </div>
             <div className='relative '>
               <img src={image4} alt="Slide 3" className="slider-image" />
-              {/* <div className='absolute bottom-0 w-full mx-auto h-[30%] text-white bg-gradient-to-t from-[rgba(0,0,0,1)] to-[rgba(0,0,0,0)] flex justify-center items-center'></div> */}
             </div>
             {/* Add more slides as needed */}
           </Slider>
@@ -67,7 +73,7 @@ const Home = () => {
           </div>
           
           
-          <div className=' w-[90%] h-full  overflow-hidden px-4 text-white '> <span className='h-full flex items-center  truncate'>ameen Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis dolores perferendis, doloribus voluptatem maiores libero debitis deleniti et, nostrum officia commodi asperiores consequuntur dicta aspernatur delectus iure dignissimos! Atque, illo?</span>  </div>
+          <div className=' w-[90%] h-full  overflow-hidden px-4 text-white '> <span className='h-full flex items-center '><MarqueeComponent items={items} /></span>  </div>
 
           
           <div className='relative h-full w-[5%]'>
@@ -81,7 +87,7 @@ const Home = () => {
         </div>
 
 
-
+       
       </div>
     </div>
   );
