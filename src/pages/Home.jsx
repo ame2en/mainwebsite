@@ -10,16 +10,9 @@ import "slick-carousel/slick/slick-theme.css";
 import alert1 from "../assets/alert1.svg"
 import alert2 from "../assets/alert2.svg"
 import MarqueeComponent from '../components/MarqueeComponent.jsx';
+import building1 from "../assets/building1.png"
 
-const text="";
 
-const items = [
-  'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quae ipsam, non hic nesciunt quisquam blanditiis provident quas, saepe ullam ea eum sapiente. Deserunt, error! Quidem officiis inventore consequuntur deserunt!',
-  'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quae ipsam, non hic nesciunt quisquam blanditiis provident quas, saepe ullam ea eum sapiente. Deserunt, error! Quidem officiis inventore consequuntur deserunt!',
-  'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quae ipsam, non hic nesciunt quisquam blanditiis provident quas, saepe ullam ea eum sapiente. Deserunt, error! Quidem officiis inventore consequuntur deserunt!',
-  'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quae ipsam, non hic nesciunt quisquam blanditiis provident quas, saepe ullam ea eum sapiente. Deserunt, error! Quidem officiis inventore consequuntur deserunt!',
-  'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quae ipsam, non hic nesciunt quisquam blanditiis provident quas, saepe ullam ea eum sapiente. Deserunt, error! Quidem officiis inventore consequuntur deserunt!',
-];
 
 const Home = () => {
 
@@ -62,21 +55,21 @@ const Home = () => {
         <div className="alert-section w-full h-[20px] sm:h-[25px] md:h-[30px] lg:h-10 bg-[#0C223D] flex items-center ">
           <div className='relative h-full w-[5%]'>
 
-            <img src={alert1} alt="" className='h-[100%] shadow-lg object-cover object-right'/>
-            <span className=' absolute pl-2 h-full left-0 top-0 flex items-center font-bold'>
+            <img src={alert1} alt="" className='h-[100%] shadow-lg w-full object-cover object-right-center'/>
+            <span className='text-sm md:text-base absolute pl-2 h-full left-0 top-0 flex items-center font-bold'>
               Alert
             </span>
 
           </div>
           
           
-          <div className=' w-[90%] h-full  overflow-hidden px-4 text-white '> <span className='h-full flex items-center '><MarqueeComponent items={items} /></span>  </div>
+          <div className=' w-[90%] h-full  overflow-hidden px-4 text-white '> <span className='h-full flex items-center '><MarqueeComponent  /></span>  </div>
 
           
           <div className='relative h-full w-[5%]'>
 
-            <img src={alert2} alt="" className='h-[100%] shadow-lg w-full object-cover object-left'/>
-            <span className=' absolute pr-1 h-full right-0 top-0 flex items-center font-bold'>
+            <img src={alert2} alt="" className='h-[100%] shadow-lg w-full object-cover object-left-center'/>
+            <span className='text-[12px] md:text-base absolute pr-1 h-full right-0 top-0 flex items-center font-bold'>
               <a href="">View All</a>
             </span>
 
@@ -85,11 +78,22 @@ const Home = () => {
 
 
 
-        <div className='aboutus-section'>
+        <div className='aboutus-section flex flex-col md:flex-row  justify-center items-center flex-wrap w-full mt-12 md:mt-16'>
 
-        
+        <div className=' w-[80%]  md:w-[40%] py-10 flex flex-col gap-8 md:gap-16 px-8 md:px-10'>
+
+        <div className=' text-[24px] md:text-[36px]  font-extrabold text-[#0C223D]'>About Us <span className='text-[#960E0E]'>|</span></div>
+        <div  className=' text-base font-[600] md:text-lg  ' style={{textIndent:"100px"}}>                     Northern Power Distribution Company of Telangana Ltd (TGNPDCL) was under the Companies Act,1956 as a Public Limited Company  30-03-2000 with head quarters at Warangal to carryout  distribution business as part of the unbundling of  A.P.S.E.B.</div>
+        <div className=' text-end '> <button className=' bg-[#0C223D] text-white md:text-base text-sm p-1 md:p-2 px-6 md:px-12 rounded-lg'>Read More</button></div>
+        </div>
+        <div className='  w-[80%] md:w-[40%]  '>  
+            <img src={building1} className='mx-auto w-[90%] h-[90%] object-cover rounded-xl shadow-lg' alt="" />
+        </div>
+        </div>
 
 
+        <div className=' w-full'>
+          
         </div>
 
 
