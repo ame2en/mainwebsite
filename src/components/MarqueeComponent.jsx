@@ -25,7 +25,7 @@ const Fade = styled.div`
   top: 0;
   bottom: 0;
   width: 100px; // Adjust the width as needed
-  z-index: 100;
+  z-index: 20;
 
   &.left {
     left: 0;
@@ -73,22 +73,27 @@ const MarqueeComponent = () => {
   const items = [
     {
       href: 'https://www.powergrid.in/sites/default/files/meetings-notices-file/NSEBSEReg30RKTyagidt06062024.pdf',
-      title: 'Shri Ravindra Kumar Tyagi, CMD, entrusted with an additional Charge of the post of Director (Projects)',
+      date : "April 30th,2024 ",
+      title: 'Extension of last date for submission of Tenders for courier service to Corporate Office,Vidyuth Bhavan,TGNPDCL',
     },
     {
       href: 'https://www.powergrid.in/sites/default/files/press_document/EngPressRelease.pdf',
-      title: 'POWERGRID acquires “Khavda IV-E2 Power Transmission Limited” under TBCB',
+      date : "March 18th, 2024 ",
+      title: 'Paper clippings on orders of Additional Surcharge for H1 of FY 2024-25',
     },
     {
       href: 'https://www.powergrid.in/en/events/power-transmission-sector-partner-ceo-meet-2024',
-      title: 'POWERGRID organized a Power Transmission Sector Partner CEO Meet 2024',
+      date : "March 18th, 2024 ",
+      title: 'TGERC order on Continuation of Retail Supply Tariffs, Cross Subsidy surcharge of FY 2023-24 from 01.04.2024',
     },
     {
       href: 'https://www.powergrid.in/sites/default/files/press_document/ABMS_Press_Release.pdf',
+      date : "March 18th, 2024 ",
       title: 'ANTI BRIBERY MANAGEMENT SYSTEM (ABMS) CERTIFICATION TO POWERGRID',
     },
     {
       href: 'https://www.powergrid.in/en/events/world-energy-congress-wec-2024',
+      date : "March 18th, 2024 ",
       title: 'World Energy Congress (WEC) 2024',
     },
   ];
@@ -97,11 +102,11 @@ const MarqueeComponent = () => {
     <Container>
       <Fade className="left" />
       <MarqueeWrapper>
-        <Marquee gradient={false} pauseOnHover direction="left" play={true} delay={2} speed={50}>
+        <Marquee gradient={false} pauseOnHover direction="left" play={true} delay={3} speed={50}>
           {items.map((item, index) => (
             <MarqueeItem key={index}>
               <MarqueeLink href={item.href} target="_blank" title={item.title}>
-                {item.title}
+                {item.date} - {item.title}
               </MarqueeLink>
             </MarqueeItem>
           ))}

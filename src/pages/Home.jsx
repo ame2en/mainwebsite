@@ -7,8 +7,6 @@ import image4 from "../assets/coverimages/image4.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import alert1 from "../assets/Frame.svg"
-// import alert2 from "../assets/Frame1.svg"
 import alert1 from "../assets/alert1.svg"
 import alert2 from "../assets/alert2.svg"
 import MarqueeComponent from '../components/MarqueeComponent.jsx';
@@ -34,8 +32,8 @@ const Home = () => {
     speed: 800,
     autoplaySpeed: 3000,
     cssEase: "linear",
-    fade: true, // Enable fade effect
-    arrows: false // Hide navigation arrows
+    fade: true, 
+    arrows: false 
   };
 
   return (
@@ -56,7 +54,6 @@ const Home = () => {
             <div className='relative '>
               <img src={image4} alt="Slide 3" className="slider-image" />
             </div>
-            {/* Add more slides as needed */}
           </Slider>
           <div className='absolute bottom-0 w-full mx-auto h-[50%] text-white bg-gradient-to-t from-[rgba(0,0,0,1)] to-[rgba(0,0,0,0)] flex justify-center items-center'></div>
         </div>
@@ -84,6 +81,15 @@ const Home = () => {
             </span>
 
           </div>
+        </div>
+
+
+
+        <div className='aboutus-section'>
+
+        
+
+
         </div>
 
 
