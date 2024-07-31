@@ -76,7 +76,7 @@ const NavBar = () => {
 
             <div className='absolute top-0 right-0 h-full w-full skew-x-[-40deg] md:skew-x-[-30deg] bg-[#0C223D] rounded-tl-md  md:rounded-tl-xl'></div>
           
-          <nav className=" relative text-white  h-full w-full pl-[1rem] md:pl-[2rem] pr-[1.2rem] md:pr-[1.5rem] flex justify-between items-center text-[7px] md:text-[10px] lg:text-[12px] xl:text-base">
+          <nav className=" relative text-white  h-full w-full pl-[1rem] md:pl-[2rem] pr-[1.2rem] md:pr-[1.5rem] flex justify-between items-center text-[7px] md:text-[9px] lg:text-[12px] xl:text-base">
             <Link to="/" className="nav-link   py-2">Home</Link>
             <Link to="/about-us" className="nav-link  py-2">About Us <FontAwesomeIcon icon={faCaretDown} /></Link>
             <Link to="/consumer-info" className="nav-link py-2">Consumer Info <FontAwesomeIcon icon={faCaretDown} /></Link>

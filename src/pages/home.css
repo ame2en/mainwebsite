@@ -90,20 +90,15 @@
 
 
 @media (max-width: 768px) {
-
   .slick-dots li button:before {
     font-size: 12px !important; 
   }
-
-
 }
 
 @media (max-width: 480px) {
-
   .slick-dots li button:before {
     font-size: 10px !important; 
   }
-
 }
 
 
@@ -115,4 +110,31 @@
   object-position: left center;
 }
 
+
+  .shadow-custom {
+    box-shadow:  0 4px 8px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .gradient-text {
+    background: linear-gradient(75deg ,#A50000 0%, #0D213D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+  .card{
+    background-color: antiquewhite;
+    height: 100%;
+    width: 100%;
+  }
+
+
+  .cards-section{
+    margin: 50px 150px;
+    height: 400px;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns : repeat(7,150px);
+    gap: 10px;
+  }
 
