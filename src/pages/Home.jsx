@@ -13,6 +13,8 @@ import MarqueeComponent from '../components/MarqueeComponent.jsx';
 import building1 from "../assets/building1.png"
 import vision from "../assets/vision.jpg";
 import mission from "../assets/mission.jpg";
+// import icon1 from "../assets/services/icon1.png"
+import icon1 from "../assets/services/icon1.svg"
 
 
 const Home = () => {
@@ -130,155 +132,93 @@ const Home = () => {
 
         <div className='h-[10vh] w-full'></div>
 
-        <div className='our-services-section bg-[#E4E4E4] w-full pt-10'>
+        <div className='our-services-section bg-[#E4E4E4] w-full pt-10 '>
           <div className=' w-full text-center text-[36px] font-extrabold text-[#0C223D] '>Services We Offer <span className='text-[#960E0E]'>|</span></div>
 
-          {/* <div className='w-full flex justify-center'>
-            
-          
-          <div className='cards-section   '>
-            <div className="card">     
-              <div className=''></div>
-              <div className=''></div>
-            </div>
-            <div className="card">     
-              <div className=''></div>
-              <div className=''></div>
-            </div>
-            <div className="card">     
-              <div className=''></div>
-              <div className=''></div>
-            </div>
-            <div className="card">     
-              <div className=''></div>
-              <div className=''></div>
-            </div>
-            <div className="card">     
-              <div className=''></div>
-              <div className=''></div>
-            </div>
-            <div className="card">     
-              <div className=''></div>
-              <div className=''></div>
-            </div>
-            <div className="card">     
-              <div className=''></div>
-              <div className=''></div>
-            </div>
-            <div className="card">     
-              <div className=''></div>
-              <div className=''></div>
-            </div>
-            <div className="card">     
-              <div className=''></div>
-              <div className=''></div>
-            </div>
-            <div className="card">     
-              <div className=''></div>
-              <div className=''></div>
-            </div>
-            <div className="card">     
-              <div className=''></div>
-              <div className=''></div>
-            </div>
-            <div className="card">     
-              <div className=''></div>
-              <div className=''></div>
-            </div>
-            <div className="card">     
-              <div className=''></div>
-              <div className=''></div>
-            </div>
-            <div className="card">     
-              <div className=''></div>
-              <div className=''></div>
-            </div>
-          </div>
-          </div> */}
 
-
-<div className="flex justify-center items-center  ">
-      <div className="grid grid-cols-7 gap-x-2.5 gap-y-5 my-[100px]">
-          <div 
-            className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
-            style={{ height: '170px', width: '150px' }}>
-            {/* <div className="text-center">{service}</div> */}
+          <div className="flex justify-center items-center  ">
+          <div className="grid grid-cols-5 md:grid-cols-6 lg:grid-cols-7 gap-x-2.5 gap-y-2.5 my-[40px]">
+              <div 
+                className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md card  "
+                style={{ height: '170px', width: '150px', }}>
+                  <img src={icon1} alt="" className='h-[80%] w-[80%] object-cover ' style={{}} />
+                <div className="text-center font-[650] text-[14px] text-black text">Pay Your Bill</div>
+              </div>
+              <div 
+                className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
+                style={{ height: '170px', width: '150px' }}>
+                  <img src="" alt="" />
+                <div className="text-center">Pay Your Bill</div>
+              </div>
+              <div 
+                className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
+                style={{ height: '170px', width: '150px' }}>
+                <div className="text-center">Pay Your Bill</div>
+              </div>
+              <div 
+                className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
+                style={{ height: '170px', width: '150px' }}>
+                <div className="text-center">Pay Your Bill</div>
+              </div>
+              <div 
+                className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
+                style={{ height: '170px', width: '150px' }}>
+                <div className="text-center">Pay Your Bill</div>
+              </div>
+              <div 
+                className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
+                style={{ height: '170px', width: '150px' }}>
+                <div className="text-center">Pay Your Bill</div>
+              </div>
+              <div 
+                className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
+                style={{ height: '170px', width: '150px' }}>
+                <div className="text-center">Pay Your Bill</div>
+              </div>
+              <div className='brder h-[4px] rounded-sm bg-[rgba(150,14,14,0.5)] -mx-4'></div>
+              <div 
+                className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
+                style={{ height: '170px', width: '150px' }}>
+                <div className="text-center">Pay Your Bill</div>
+              </div>
+              <div 
+                className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
+                style={{ height: '170px', width: '150px' }}>
+                <div className="text-center">Pay Your Bill</div>
+              </div>
+              <div 
+                className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
+                style={{ height: '170px', width: '150px' }}>
+                <div className="text-center">Pay Your Bill</div>
+              </div>
+              <div 
+                className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
+                style={{ height: '170px', width: '150px' }}>
+                <div className="text-center">Pay Your Bill</div>
+              </div>
+              <div 
+                className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
+                style={{ height: '170px', width: '150px' }}>
+                <div className="text-center">Pay Your Bill</div>
+              </div>
+              <div 
+                className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
+                style={{ height: '170px', width: '150px' }}>
+                <div className="text-center">Pay Your Bill</div>
+              </div>
+              <div 
+                className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
+                style={{ height: '170px', width: '150px' }}>
+                <div className="text-center">Pay Your Bill</div>
+              </div>
+              <div className='brder h-[4px] rounded-sm bg-[rgba(150,14,14,0.5)] -mx-4'></div>
+              <div 
+                className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md lstel"
+                style={{ height: '170px', width: '150px' }}>
+                <div className="text-center">Pay Your Bill</div>
+              </div>  
           </div>
-          <div 
-            className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
-            style={{ height: '170px', width: '150px' }}>
-            {/* <div className="text-center">{service}</div> */}
-          </div>
-          <div 
-            className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
-            style={{ height: '170px', width: '150px' }}>
-            {/* <div className="text-center">{service}</div> */}
-          </div>
-          <div 
-            className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
-            style={{ height: '170px', width: '150px' }}>
-            {/* <div className="text-center">{service}</div> */}
-          </div>
-          <div 
-            className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
-            style={{ height: '170px', width: '150px' }}>
-            {/* <div className="text-center">{service}</div> */}
-          </div>
-          <div 
-            className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
-            style={{ height: '170px', width: '150px' }}>
-            {/* <div className="text-center">{service}</div> */}
-          </div>
-          <div 
-            className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
-            style={{ height: '170px', width: '150px' }}>
-            {/* <div className="text-center">{service}</div> */}
-          </div>
-          <div 
-            className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
-            style={{ height: '170px', width: '150px' }}>
-            {/* <div className="text-center">{service}</div> */}
-          </div>
-          <div 
-            className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
-            style={{ height: '170px', width: '150px' }}>
-            {/* <div className="text-center">{service}</div> */}
-          </div>
-          <div 
-            className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
-            style={{ height: '170px', width: '150px' }}>
-            {/* <div className="text-center">{service}</div> */}
-          </div>
-          <div 
-            className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
-            style={{ height: '170px', width: '150px' }}>
-            {/* <div className="text-center">{service}</div> */}
-          </div>
-          <div 
-            className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
-            style={{ height: '170px', width: '150px' }}>
-            {/* <div className="text-center">{service}</div> */}
-          </div>
-          <div 
-            className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
-            style={{ height: '170px', width: '150px' }}>
-            {/* <div className="text-center">{service}</div> */}
-          </div>
-          <div 
-            className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
-            style={{ height: '170px', width: '150px' }}>
-            {/* <div className="text-center">{service}</div> */}
-          </div>
-          <div 
-            className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
-            style={{ height: '170px', width: '150px' }}>
-            {/* <div className="text-center">{service}</div> */}
-          </div>
-
-
-        
-      </div>
-    </div>
+        </div>
 
 
 

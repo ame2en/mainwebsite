@@ -121,20 +121,23 @@
     -webkit-text-fill-color: transparent;
   }
 
+.brder{
+  grid-column-start: 1;
+  grid-column-end : -1;
 
-  .card{
-    background-color: antiquewhite;
-    height: 100%;
-    width: 100%;
-  }
+}
 
+.lstel{
+  grid-column-start : 4;
+}
 
-  .cards-section{
-    margin: 50px 150px;
-    height: 400px;
-    background-color: aquamarine;
-    display: grid;
-    grid-template-columns : repeat(7,150px);
-    gap: 10px;
-  }
+.card{
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover{
+
+  box-shadow: 3px -3px 12px 0px #0C213C, -2px 2px 12px 0px #960E0E;
+}
 
