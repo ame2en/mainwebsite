@@ -6,6 +6,13 @@ import icon4 from "../assets/services/icon4.svg";
 import icon5 from "../assets/services/icon5.svg";
 import icon6 from "../assets/services/icon6.svg";
 import icon7 from "../assets/services/icon7.svg";
+import icon8 from "../assets/services/icon8.svg";
+import icon9 from "../assets/services/icon9.svg";
+import icon10 from "../assets/services/icon10.svg";
+import icon11 from "../assets/services/icon11.svg";
+import icon12 from "../assets/services/icon12.svg";
+import icon13 from "../assets/services/icon13.svg";
+import icon14 from "../assets/services/icon14.svg";
 
 
 const Ourservicessec = () => {
@@ -78,52 +85,91 @@ const Ourservicessec = () => {
                 className="flex flex-col justify-between items-center bg-white border  rounded-lg p-4 shadow-md card"
                 style={{ height: '170px', width: '150px' }}>
                 <div className='flex justify-center items-center h-[100px] rainbow rounded-md p-4'>
-
+                         
                 <img src={icon7} alt="" className='h-[60px] object-cover ' style={{}} />
                 </div> 
                 <div className="text-center font-[650] text-[14px] text-black leading-none ">Your Feedback</div>
               </div>
               <div className='brder h-[4px] rounded-sm bg-[rgba(150,14,14,0.5)] -mx-4'></div>
               <div 
-                className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
+                className="flex flex-col justify-between items-center bg-white border  rounded-lg p-4 shadow-md card"
                 style={{ height: '170px', width: '150px' }}>
-                <div className="text-center">Pay Your Bill</div>
+                <div className='flex justify-center items-center h-[100px] rainbow rounded-md p-4'>
+
+                <img src={icon8} alt="" className='h-[70px] object-cover ' style={{}} />
+                </div> 
+                <div className="text-center font-[650] text-[14px] text-black leading-none ">Retrospective
+                Survey</div>
               </div>
               <div 
-                className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
+                className="flex flex-col justify-between items-center bg-white border  rounded-lg p-4 shadow-md card"
                 style={{ height: '170px', width: '150px' }}>
-                <div className="text-center">Pay Your Bill</div>
+                <div className='flex justify-center items-center h-[100px] rainbow rounded-md p-4'>
+                         
+                <img src={icon9} alt="" className='h-[60px] object-cover ' style={{}} />
+                </div> 
+                <div className="text-center font-[650] text-[14px] text-black leading-none ">Deparmental
+                Credit Card</div>
               </div>
               <div 
-                className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
+                className="flex flex-col justify-between items-center bg-white border  rounded-lg p-4 shadow-md card"
                 style={{ height: '170px', width: '150px' }}>
-                <div className="text-center">Pay Your Bill</div>
+                <div className='flex justify-center items-center h-[100px] rainbow rounded-md p-4'>
+                
+                <img src={icon10} alt="" className='h-[60px] object-cover ' style={{}} />
+                </div> 
+                <div className="text-center font-[650] text-[14px] text-black leading-none ">AGL 
+                Seniority List</div>
               </div>
               <div 
-                className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
+                className="flex flex-col justify-between items-center bg-white border  rounded-lg p-4 shadow-md card"
                 style={{ height: '170px', width: '150px' }}>
-                <div className="text-center">Pay Your Bill</div>
+                <div className='flex justify-center items-center h-[100px] rainbow rounded-md p-4'>
+                
+                <img src={icon11} alt="" className='h-[80px] object-cover ' style={{}} />
+                </div> 
+                <div className="text-center font-[650] text-[14px] text-black leading-none ">Ease of Doing
+                Business</div>
               </div>
               <div 
-                className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
+                className="flex flex-col justify-between items-center bg-white border  rounded-lg p-4 shadow-md card"
                 style={{ height: '170px', width: '150px' }}>
-                <div className="text-center">Pay Your Bill</div>
+                <div className='flex justify-center items-center h-[100px] rainbow rounded-md p-4'>
+                
+                <img src={icon12} alt="" className='h-[60px] object-cover ' style={{}} />
+                </div> 
+                <div className="text-center font-[650] text-[14px] text-black leading-none ">Access your <br />
+                Bill</div>
               </div>
               <div 
-                className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
+                className="flex flex-col justify-between items-center bg-white border  rounded-lg p-4 shadow-md card"
                 style={{ height: '170px', width: '150px' }}>
-                <div className="text-center">Pay Your Bill</div>
+                <div className='flex justify-center items-center h-[100px] rainbow rounded-md p-4'>
+                
+                <img src={icon13} alt="" className='h-[60px] object-cover ' style={{}} />
+                </div> 
+                <div className="text-center font-[650] text-[14px] text-black leading-none ">EHT Line <br />Shifting</div>
               </div>
               <div 
-                className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md"
+                className="flex flex-col justify-between items-center bg-white border  rounded-lg p-4 shadow-md card"
                 style={{ height: '170px', width: '150px' }}>
-                <div className="text-center">Pay Your Bill</div>
+                <div className='flex justify-center items-center h-[100px] rainbow rounded-md p-4'>
+                
+                <img src={icon14} alt="" className='h-[60px] object-cover ' style={{}} />
+                </div> 
+                <div className="text-center font-[650] text-[14px] text-black leading-none ">EH/HT
+                New Connection</div>
               </div>
               <div className='brder h-[4px] rounded-sm bg-[rgba(150,14,14,0.5)] -mx-4'></div>
               <div 
-                className="flex flex-col justify-center items-center bg-white border  rounded-lg p-4 shadow-md lstel"
+                className="flex flex-col justify-between items-center bg-white border  rounded-lg p-4 shadow-md card"
                 style={{ height: '170px', width: '150px' }}>
-                <div className="text-center">Pay Your Bill</div>
+                <div className='flex justify-center items-center h-[100px] rainbow rounded-md p-4'>
+                
+                <img src={icon9} alt="" className='h-[60px] object-cover ' style={{}} />
+                </div> 
+                <div className="text-center font-[650] text-[14px] text-black leading-none ">Deparmental
+                Credit Card</div>
               </div>  
           </div>
         </div>
