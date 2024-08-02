@@ -18,37 +18,7 @@ const NavBar = () => {
   
 
   return (
-    // <header className="fixed w-full z-10 bg-blue-900 text-white h-[90px]">
-    //   <div className="flex justify-between items-center h-full px-4">
-    //     <div className="flex items-center space-x-2">
-    //       <div className="skewed bg-blue-800 rounded-l-lg px-4 py-2">
-    //         <div className="transform -skew-x-[-20deg]">NPD</div>
-    //       </div>
-    //       <span className="font-bold text-xl">TGNPDCL</span>
-    //     </div>m
-    //     <div className="flex space-x-2">
-    //       <a href="#linkedin" className="social-link">LinkedIn</a>
-    //       <a href="#whatsapp" className="social-link">WhatsApp</a>
-    //       <a href="#other1" className="social-link">Other1</a>
-    //       <a href="#instagram" className="social-link">Instagram</a>
-    //     </div>
-    //   </div>
-    //   <div className="bg-white text-blue-900 flex justify-between items-center px-4 py-2 shadow-md skew-x-2">
-    //     <img src="/path-to-logo.png" alt="Logo" className="h-10" />
-    //     <nav className="flex space-x-4">
-    //       <Link to="/" className="nav-link">Home</Link>
-    //       <Link to="/about-us" className="nav-link">About Us</Link>
-    //       <Link to="/consumer-info" className="nav-link">Consumer Info</Link>
-    //       <Link to="/tariffs-regulations" className="nav-link">Tariffs & Regulations</Link>
-    //       <Link to="/downloads" className="nav-link">Downloads</Link>
-    //       <Link to="/consumer-forms" className="nav-link">Consumer Forms</Link>
-    //       <Link to="/media-portal" className="nav-link">Media Portal</Link>
-    //       <Link to="/employee-portal" className="nav-link">Employee Portal</Link>
-    //       <Link to="/careers" className="nav-link">Careers</Link>
-    //       <Link to="/contact-us" className="nav-link">Contact Us</Link>
-    //     </nav>
-    //   </div>
-    // </header>
+
 
     <header className='z-[100] fixed bg-white shadow-xl h-[50px] md:h-[60px] lg:h-[80px] w-full '>
       <div className='relative w-full h-full '>

@@ -125,6 +125,14 @@
   grid-column-start: 1;
   grid-column-end : -1;
 
+
+}
+
+.brd1{
+  grid-row-start: 2;
+}
+.brd2{
+  grid-row-start: 4;
 }
 
 .lstel{
@@ -209,6 +217,8 @@
 		
 	}
 }
+
+
 
 
 

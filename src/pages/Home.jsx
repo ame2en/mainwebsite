@@ -14,6 +14,7 @@ import building1 from "../assets/building1.png"
 import vision from "../assets/vision.jpg";
 import mission from "../assets/mission.jpg";
 import Ourservicessec from '../components/Ourservicessec.jsx';
+import Footer from '../components/Footer.jsx';
 
 
 const Home = () => {
@@ -133,6 +134,14 @@ const Home = () => {
 
 
         <Ourservicessec/>
+
+
+        <div className='h-[10vh] w-full'></div>
+
+        <Footer />
+
+
+        
 
 
        

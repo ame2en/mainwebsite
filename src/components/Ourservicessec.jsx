@@ -22,7 +22,7 @@ const Ourservicessec = () => {
 
 
           <div className="flex justify-center items-center  ">
-          <div className="grid grid-cols-5 md:grid-cols-6 lg:grid-cols-7 gap-x-2.5 gap-y-2.5 my-[40px]">
+          <div className="grid grid-cols-5 md:grid-cols-6 lg:grid-cols-7 gap-x-2.5 gap-y-2.5 my-[40px] ">
               <a href="https://www.google.com/">
 
               <div 
@@ -90,7 +90,7 @@ const Ourservicessec = () => {
                 </div> 
                 <div className="text-center font-[650] text-[14px] text-black leading-none ">Your Feedback</div>
               </div>
-              <div className='brder h-[4px] rounded-sm bg-[rgba(150,14,14,0.5)] -mx-4'></div>
+              <div className='brder brd1 h-[4px] rounded-sm bg-[rgba(150,14,14,0.5)]  -mx-4'></div>
               <div 
                 className="flex flex-col justify-between items-center bg-white border  rounded-lg p-4 shadow-md card"
                 style={{ height: '170px', width: '150px' }}>
@@ -160,7 +160,7 @@ const Ourservicessec = () => {
                 <div className="text-center font-[650] text-[14px] text-black leading-none ">EH/HT
                 New Connection</div>
               </div>
-              <div className='brder h-[4px] rounded-sm bg-[rgba(150,14,14,0.5)] -mx-4'></div>
+              <div className='brder h-[4px] brd2 rounded-sm bg-[rgba(150,14,14,0.5)] -mx-4'></div>
               <div 
                 className="flex flex-col justify-between items-center bg-white border  rounded-lg p-4 shadow-md card"
                 style={{ height: '170px', width: '150px' }}>
