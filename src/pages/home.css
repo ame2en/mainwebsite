@@ -1,3 +1,7 @@
+
+
+
+
 .slider-container {
   position: relative;
   width: 100%;
@@ -221,10 +225,10 @@
 
 
 .objts{
-  background-image: url("../assets/background2.svg");
+  background-image: url("../assets/background22.svg");
   background-size: cover;
   background-position: center;
-  background-color: #16345F;
+  /* background-color: #16345F; */
 }
 
 

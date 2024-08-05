@@ -15,6 +15,7 @@ import vision from "../assets/vision.jpg";
 import mission from "../assets/mission.jpg";
 import Ourservicessec from '../components/Ourservicessec.jsx';
 import Footer from '../components/Footer.jsx';
+import Impthighlights from '../components/Impthighlights.jsx';
 
 
 const Home = () => {
@@ -131,21 +132,14 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='h-[10vh] w-full'></div>
 
+        <div className='h-[10vh] w-full'></div>
 
         <Ourservicessec/>
 
         <div className='h-[10vh] w-full'></div>
 
-        <div className='impt-highlights w-full h-[50vh] '> 
-          <div className=' h-full w-[80%]  mx-auto rounded-[30px] objts  '>
-            <div className=' border-inherit'> ameen</div>
-          </div>
-
-
-        </div> 
-
+        <Impthighlights/>
 
         <div className='h-[10vh] w-full'></div>
 
