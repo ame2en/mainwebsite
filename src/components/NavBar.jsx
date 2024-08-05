@@ -20,7 +20,7 @@ const NavBar = () => {
   return (
 
 
-    <header className='z-[100] fixed bg-white shadow-xl h-[50px] md:h-[60px] lg:h-[80px] w-full '>
+    <header className='z-[100] fixed bg-white shadow-xl h-[50px] md:h-[60px] lg:h-[90px] w-full '>
       <div className='relative w-full h-full '>
         <div className='topbar absolute top-0  h-[40%] w-full flex'>         
           <div className=' relative   w-[85%] md:w-[87%] h-full  mx-[-10px]  '>

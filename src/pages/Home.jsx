@@ -33,13 +33,14 @@ const Home = () => {
   };
 
   return (
-    <div className='absolute top-[50px] md:top-[60px] lg:top-[80px]  w-full '>
+    <div className='absolute top-[50px] md:top-[60px] lg:top-[90px]  w-full '>
     {/* <div className='mt-[50px] md:mt-[60px] lg:mt-[80px]  w-full '> */}
       <div className=' h-[500vh]  w-full'>
         <div className="slider-container w-full relative">
           <Slider {...settings}>
             <div className='relative '>
               <img src={image1} alt="Slide 1" className="slider-image " />
+              <div> </div>
             </div>
             <div className='relative '>
               <img src={image2} alt="Slide 2" className="slider-image " />
@@ -134,6 +135,16 @@ const Home = () => {
 
 
         <Ourservicessec/>
+
+        <div className='h-[10vh] w-full'></div>
+
+        <div className='impt-highlights w-full h-[50vh] '> 
+          <div className=' h-full w-[80%]  mx-auto rounded-[30px] objts  '>
+            <div className=' border-inherit'> ameen</div>
+          </div>
+
+
+        </div> 
 
 
         <div className='h-[10vh] w-full'></div>

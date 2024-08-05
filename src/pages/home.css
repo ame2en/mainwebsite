@@ -6,7 +6,7 @@
 
 .slider-image {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   object-fit: cover;
 }
 
@@ -214,11 +214,17 @@
 		height: calc(100% - 4px);
 		background: white;
 		border-radius: 5px;
+
 		
 	}
 }
 
 
-
+.objts{
+  background-image: url("../assets/background2.svg");
+  background-size: cover;
+  background-position: center;
+  background-color: #16345F;
+}
 
 

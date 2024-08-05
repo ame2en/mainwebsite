@@ -1,8 +1,8 @@
 .footer{
 
-    background: url("../assets/footer.jpeg"),linear-gradient(to top right,rgba(0,31,73,0.85),rgba(138,0,0,0.73));
+    background: url("../assets/footer.jpeg");
     background-repeat: no-repeat;
-
-  background-position: ;
     background-size: cover;
+    /* background-attachment: fixed; */
+
 }
