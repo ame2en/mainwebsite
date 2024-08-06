@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./nav.css";
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo1 from "../assets/topbarlogos/linkedin.svg"
 import logo2 from "../assets/topbarlogos/whatsapp.svg"
 import logo3 from "../assets/topbarlogos/insta.svg"
@@ -8,14 +8,24 @@ import logo4 from "../assets/topbarlogos/X.svg"
 import logo from "../assets/mainlogo1.png";
 // import logo from "../assets/logo1.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import { faCaretDown,faCaretUp } from '@fortawesome/free-solid-svg-icons';
 
 
 
 const NavBar = () => {
 
+  const [dropdown, setDropdown] = useState({});
 
-  
+
+
+  const handleDropdownClick = (menu) => {
+    setDropdown((prevState) => ({
+      ...prevState,
+      [menu]: !prevState[menu],
+    }));
+  };
+
+
 
   return (
 
@@ -47,16 +57,39 @@ const NavBar = () => {
             <div className='absolute top-0 right-0 h-full w-full skew-x-[-40deg] md:skew-x-[-30deg] bg-[#0C223D] rounded-tl-md  md:rounded-tl-xl'></div>
           
           <nav className=" relative text-white  h-full w-full pl-[1rem] md:pl-[2rem] pr-[1.2rem] md:pr-[1.5rem] flex justify-between items-center text-[7px] md:text-[9px] lg:text-[12px] xl:text-base">
-            <Link to="/" className="nav-link   py-2">Home</Link>
-            <Link to="/about-us" className="nav-link  py-2">About Us <FontAwesomeIcon icon={faCaretDown} /></Link>
-            <Link to="/consumer-info" className="nav-link py-2">Consumer Info <FontAwesomeIcon icon={faCaretDown} /></Link>
-            <Link to="/tariffs-regulations" className="nav-link py-2">Tariffs & Regulations <FontAwesomeIcon icon={faCaretDown} /></Link>
-            <Link to="/downloads" className="nav-link py-2">Downloads <FontAwesomeIcon icon={faCaretDown} /></Link>
-            <Link to="/consumer-forms" className="nav-link py-2">Consumer Forms <FontAwesomeIcon icon={faCaretDown} /></Link>
-            <Link to="/media-portal" className="nav-link py-2">Media Portal <FontAwesomeIcon icon={faCaretDown} /></Link>
-            <Link to="/employee-portal" className="nav-link py-2">Employee Portal <FontAwesomeIcon icon={faCaretDown} /></Link>
-            <Link to="/careers" className="nav-link py-2">Careers</Link>
-            <Link to="/contact-us" className="nav-link py-2">Contact Us</Link>
+            <NavLink to="/" className="nav-link   py-2" >Home</NavLink>
+            <div className="nav-link relative  py-2"  onClick={() => handleDropdownClick('aboutus')} >
+
+           
+            <NavLink  >About Us    {!dropdown.aboutus ? <FontAwesomeIcon icon={faCaretDown} /> : <FontAwesomeIcon icon={faCaretUp} />}   </NavLink>
+            {dropdown.aboutus && (
+                  <div className='absolute  left-0   '>
+                    <div className='mt-1 bg-[#1b1b1b] rounded-lg '>
+                    <NavLink to="/consumer/info1" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold hover:bg-[#363636] ease-in-out duration-200 relative">About NPDCL</NavLink>
+                    <NavLink to="/consumer/info2" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold hover:bg-[#363636] ease-in-out duration-200 relative ">Vision & Mission</NavLink>
+                    <NavLink to="/consumer/info3" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Board Of Directors</NavLink>
+                    <NavLink to="/consumer/info3" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Organization Chart</NavLink>
+                    <NavLink to="/consumer/info3" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Quarterly Finalized Results</NavLink>
+                    <NavLink to="/consumer/info3" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Annual Reports</NavLink>
+                    <NavLink to="/consumer/info3" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Annual Returns</NavLink>
+                    <NavLink to="/consumer/info3" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Corporate Policies</NavLink>
+                    <NavLink to="/consumer/info3" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Awards and Recognition</NavLink>
+                    </div>
+                  </div>
+                )}
+             </div>
+
+
+
+
+            <NavLink to="/consumer-info" className="nav-link py-2">Consumer Info <FontAwesomeIcon icon={faCaretDown} /></NavLink>
+            <NavLink to="/tariffs-regulations" className="nav-link py-2">Tariffs & Regulations <FontAwesomeIcon icon={faCaretDown} /></NavLink>
+            <NavLink to="/downloads" className="nav-link py-2">Downloads <FontAwesomeIcon icon={faCaretDown} /></NavLink>
+            <NavLink to="/consumer-forms" className="nav-link py-2">Consumer Forms <FontAwesomeIcon icon={faCaretDown} /></NavLink>
+            <NavLink to="/media-portal" className="nav-link py-2">Media Portal <FontAwesomeIcon icon={faCaretDown} /></NavLink>
+            <NavLink to="/employee-portal" className="nav-link py-2">Employee Portal <FontAwesomeIcon icon={faCaretDown} /></NavLink>
+            <NavLink to="/careers" className="nav-link py-2">Careers</NavLink>
+            <NavLink to="/contact-us" className="nav-link py-2">Contact Us</NavLink>
         </nav>
 
         </div>

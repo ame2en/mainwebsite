@@ -4,6 +4,10 @@ import image1 from "../assets/coverimages/image1.jpg";
 import image2 from "../assets/coverimages/image2.png";
 import image3 from "../assets/coverimages/image3.jpg";
 import image4 from "../assets/coverimages/image4.jpg";
+import image5 from "../assets/coverimages/image5.jpg";
+import image6 from "../assets/coverimages/image6.jpg";
+import image7 from "../assets/coverimages/image7.jpg";
+import image8 from "../assets/coverimages/image8.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -37,7 +41,7 @@ const Home = () => {
     <div className='absolute top-[50px] md:top-[60px] lg:top-[90px]  w-full '>
     {/* <div className='mt-[50px] md:mt-[60px] lg:mt-[80px]  w-full '> */}
       <div className=' w-full'>
-        <div className="slider-container w-full relative">
+        <div className="slider-container w-full h-[70vh] relative">
           <Slider {...settings}>
             <div className='relative '>
               <img src={image1} alt="Slide 1" className="slider-image " />
@@ -52,8 +56,20 @@ const Home = () => {
             <div className='relative '>
               <img src={image4} alt="Slide 3" className="slider-image" />
             </div>
+            <div className='relative '>
+              <img src={image5} alt="Slide 3" className="slider-image" />
+            </div>
+            <div className='relative '>
+              <img src={image6} alt="Slide 3" className="slider-image" />
+            </div>
+            <div className='relative '>
+              <img src={image7} alt="Slide 3" className="slider-image" />
+            </div>
+            <div className='relative '>
+              <img src={image8} alt="Slide 3" className="slider-image" />
+            </div>
           </Slider>
-          <div className='absolute bottom-0 w-full mx-auto h-[50%] text-white bg-gradient-to-t from-[rgba(0,0,0,1)] to-[rgba(0,0,0,0)] flex justify-center items-center'></div>
+          {/* <div className='absolute bottom-0 w-full  h-[20%] text-white bg-gradient-to-t from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0)] flex justify-center items-center'></div> */}
         </div>
 
 
