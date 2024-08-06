@@ -13,6 +13,7 @@ import icon11 from "../assets/services/icon11.svg";
 import icon12 from "../assets/services/icon12.svg";
 import icon13 from "../assets/services/icon13.svg";
 import icon14 from "../assets/services/icon14.svg";
+import icon15 from "../assets/services/icon15.svg";
 
 
 const Ourservicessec = () => {
@@ -166,10 +167,9 @@ const Ourservicessec = () => {
                 style={{ height: '170px', width: '150px' }}>
                 <div className='flex justify-center items-center h-[100px] rainbow rounded-md p-4'>
                 
-                <img src={icon9} alt="" className='h-[60px] object-cover ' style={{}} />
+                <img src={icon15} alt="" className='h-[80px] object-cover ' style={{}} />
                 </div> 
-                <div className="text-center font-[650] text-[14px] text-black leading-none ">Deparmental
-                Credit Card</div>
+                <div className="text-center font-[650] text-[14px] text-black leading-none ">Consumer Grievance Portal</div>
               </div>  
           </div>
         </div>

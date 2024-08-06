@@ -36,7 +36,7 @@ const Home = () => {
   return (
     <div className='absolute top-[50px] md:top-[60px] lg:top-[90px]  w-full '>
     {/* <div className='mt-[50px] md:mt-[60px] lg:mt-[80px]  w-full '> */}
-      <div className=' h-[500vh]  w-full'>
+      <div className=' w-full'>
         <div className="slider-container w-full relative">
           <Slider {...settings}>
             <div className='relative '>
@@ -145,11 +145,6 @@ const Home = () => {
 
         <Footer />
 
-
-        
-
-
-       
       </div>
     </div>
   );
