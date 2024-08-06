@@ -69,6 +69,12 @@ const Footer = () => {
 
 
       </div>
+      <div className=' w-full bg-[#0D213D] text-center text-white text-sm py-2'>
+        <p>
+        Disclaimer: Though all efforts are made to publish accurate information, web masters do not take any responsibility for any inadvertent error. All those concerned are advised to cross check with the official data published from concerned offices of the TGNPDCL to ensure the correctness of the information provided herein.</p>
+        <p>Designed and maintained by -IT Wing. @TGNPDCL.</p>
+        <span className='text-base'><a href="" className=' hover:underline font-semibold'>Privacy Policy</a> | Contact Us</span>
+         </div>
       
     </div>
   )
