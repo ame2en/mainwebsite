@@ -23,7 +23,7 @@ const Impthighlights = () => {
                 
                 <img src={h1} alt="" className=' h-[120px] w-[120px] object-cover rounded-full border-white border-solid border-[10px]'  />
                 <div className=' text-white text-[36px] font-bold'><CountUp start={0} end={1527} duration={2} /></div>
-                <div className=' text-[20px] text-white font-bold'>33kV SS</div>
+                <div className=' text-[20px] text-white font-bold'>33KV SS</div>
                 
             </div>
 
