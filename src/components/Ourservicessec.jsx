@@ -162,6 +162,8 @@ const Ourservicessec = () => {
                 New Connection</div>
               </div>
               <div className='brder h-[4px] brd2 rounded-sm bg-[rgba(150,14,14,0.5)] -mx-4'></div>
+              
+              <a href="http://210.212.223.83:9070/VPV/VPVPortal/VpvPortal.jsp" >
               <div 
                 className="flex flex-col justify-between items-center bg-white border  rounded-lg p-4 shadow-md card"
                 style={{ height: '170px', width: '150px' }}>
@@ -171,6 +173,7 @@ const Ourservicessec = () => {
                 </div> 
                 <div className="text-center font-[650] text-[14px] text-black leading-none ">Consumer Grievance Portal</div>
               </div>  
+              </a>
           </div>
         </div>
 

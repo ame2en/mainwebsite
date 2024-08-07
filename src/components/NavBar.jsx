@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useRef,useEffect } from 'react';
 import "./nav.css";
 import { Link, NavLink } from 'react-router-dom';
 import logo1 from "../assets/topbarlogos/linkedin.svg"
@@ -15,8 +15,7 @@ import { faCaretDown,faCaretUp } from '@fortawesome/free-solid-svg-icons';
 const NavBar = () => {
 
   const [dropdown, setDropdown] = useState({});
-
-
+  const dropdownRef = useRef(null);
 
   const handleDropdownClick = (menu) => {
     setDropdown((prevState) => ({
@@ -24,6 +23,19 @@ const NavBar = () => {
       [menu]: !prevState[menu],
     }));
   };
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setDropdown({});
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
 
 
@@ -58,22 +70,23 @@ const NavBar = () => {
           
           <nav className=" relative text-white  h-full w-full pl-[1rem] md:pl-[2rem] pr-[1.2rem] md:pr-[1.5rem] flex justify-between items-center text-[7px] md:text-[9px] lg:text-[12px] xl:text-base">
             <NavLink to="/" className="nav-link   py-2" >Home</NavLink>
+            
+            
+            
             <div className="nav-link relative  py-2"  onClick={() => handleDropdownClick('aboutus')} >
-
-           
             <NavLink  >About Us    {!dropdown.aboutus ? <FontAwesomeIcon icon={faCaretDown} /> : <FontAwesomeIcon icon={faCaretUp} />}   </NavLink>
             {dropdown.aboutus && (
-                  <div className='absolute  left-0   '>
-                    <div className='mt-1 bg-[#1b1b1b] rounded-lg '>
-                    <NavLink to="/consumer/info1" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold hover:bg-[#363636] ease-in-out duration-200 relative">About NPDCL</NavLink>
-                    <NavLink to="/consumer/info2" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold hover:bg-[#363636] ease-in-out duration-200 relative ">Vision & Mission</NavLink>
-                    <NavLink to="/consumer/info3" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Board Of Directors</NavLink>
-                    <NavLink to="/consumer/info3" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Organization Chart</NavLink>
-                    <NavLink to="/consumer/info3" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Quarterly Finalized Results</NavLink>
-                    <NavLink to="/consumer/info3" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Annual Reports</NavLink>
-                    <NavLink to="/consumer/info3" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Annual Returns</NavLink>
-                    <NavLink to="/consumer/info3" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Corporate Policies</NavLink>
-                    <NavLink to="/consumer/info3" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Awards and Recognition</NavLink>
+                  <div className='absolute  left-0  w-48 mt-2'>
+                    <div className='mt-1 bg-[#0D213D]  rounded-lg '>
+                    <NavLink to="/consumer/info1" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200">About NPDCL</NavLink>
+                    <NavLink to="/consumer/info2" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200">Vision & Mission</NavLink>
+                    <NavLink to="/consumer/info3" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Board Of Directors</NavLink>
+                    <NavLink to="/consumer/info3" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Organization Chart</NavLink>
+                    <NavLink to="/consumer/info3" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Quarterly Finalized Results</NavLink>
+                    <NavLink to="/consumer/info3" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Annual Reports</NavLink>
+                    <NavLink to="/consumer/info3" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Annual Returns</NavLink>
+                    <NavLink to="/consumer/info3" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Corporate Policies</NavLink>
+                    <NavLink to="/consumer/info3" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Awards and Recognition</NavLink>
                     </div>
                   </div>
                 )}
@@ -81,13 +94,103 @@ const NavBar = () => {
 
 
 
+            <div className="nav-link py-2  relative" onClick={() => handleDropdownClick('consumer')}>
+            <NavLink  >Consumer Info  {!dropdown.consumer ? <FontAwesomeIcon icon={faCaretDown} /> : <FontAwesomeIcon icon={faCaretUp} />}</NavLink>
+                {dropdown.consumer && (
+                  <div className='absolute  left-0  w-56 mt-2'>
+                  <div className='mt-1 bg-[#0D213D] rounded-lg flex flex-col'>
+                  <NavLink to="/consumer/info1" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Citizen Charter</NavLink>
+                  <NavLink to="/consumer/info1" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Service Request</NavLink>
+                  <NavLink to="/consumer/info1" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">NPDCL Service at MEE SEVA Centers</NavLink>
+                  <NavLink to="/consumer/info1" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Safety Measures</NavLink>
+                  <NavLink to="/consumer/info1" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Green Tips</NavLink>
+                  <NavLink to="/consumer/info1" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Power Shutdown Notifications</NavLink>
+                  <NavLink to="/consumer/info1" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Category & Load Wise Charges</NavLink>
+                  <NavLink to="/consumer/info1" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Calculate Development Charges & Security Deposit</NavLink>
+                  </div>
+                </div>
+                )}
+            </div>
 
-            <NavLink to="/consumer-info" className="nav-link py-2">Consumer Info <FontAwesomeIcon icon={faCaretDown} /></NavLink>
-            <NavLink to="/tariffs-regulations" className="nav-link py-2">Tariffs & Regulations <FontAwesomeIcon icon={faCaretDown} /></NavLink>
-            <NavLink to="/downloads" className="nav-link py-2">Downloads <FontAwesomeIcon icon={faCaretDown} /></NavLink>
-            <NavLink to="/consumer-forms" className="nav-link py-2">Consumer Forms <FontAwesomeIcon icon={faCaretDown} /></NavLink>
-            <NavLink to="/media-portal" className="nav-link py-2">Media Portal <FontAwesomeIcon icon={faCaretDown} /></NavLink>
-            <NavLink to="/employee-portal" className="nav-link py-2">Employee Portal <FontAwesomeIcon icon={faCaretDown} /></NavLink>
+
+
+            <div className="nav-link py-2 relative" onClick={() => handleDropdownClick('tariffs')}>
+            <NavLink  >Tariffs & Regulations {!dropdown.tariffs ? <FontAwesomeIcon icon={faCaretDown} /> : <FontAwesomeIcon icon={faCaretUp} />}</NavLink>
+            {dropdown.tariffs && (
+              <div className='absolute  left-0 w-48 mt-2 '>
+                    <div className='mt-1 bg-[#0D213D] rounded-lg '>
+                    <NavLink to="/consumer/info1" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Regulations</NavLink>
+                    <NavLink to="/consumer/info1" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Proceedings</NavLink>
+                    <NavLink to="/consumer/info1" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Directives</NavLink>
+                    <NavLink to="/consumer/info1" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Orders</NavLink>
+                    <NavLink to="/consumer/info1" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Filings</NavLink>
+                    <NavLink to="/consumer/info1" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Replies to Objections </NavLink>
+                    <NavLink to="/consumer/info1" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Standards of Performance</NavLink>
+                    <NavLink to="/consumer/info1" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Consumer Grivances Redressal Forums</NavLink>
+                    <NavLink to="/consumer/info1" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Biling Procedure</NavLink>
+                    <NavLink to="/consumer/info1" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Terms and Conditions(GTCS)</NavLink>
+                    <NavLink to="/consumer/info1" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Electricity Act 2003</NavLink>
+                    <NavLink to="/consumer/info1" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">cost Data</NavLink>
+                    </div>
+                  </div>
+                )}
+            </div>
+
+
+            <div className="nav-link py-2 relative" onClick={() => handleDropdownClick('downs')}>
+
+            <NavLink  >Downloads {!dropdown.downs ? <FontAwesomeIcon icon={faCaretDown} /> : <FontAwesomeIcon icon={faCaretUp} />}</NavLink>
+            {dropdown.downs && (
+                  <div className='absolute  left-0 w-48 mt-2 '>
+                    <div className='mt-1 bg-[#0D213D] rounded-lg '>
+                    <NavLink to="/consumer/info1" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Application Forums</NavLink>
+                    <NavLink to="/consumer/info1" className="block px-4 py-1 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">RTI Manual</NavLink>
+                    </div>
+                  </div>
+                )}
+            </div>
+
+
+
+                <div className="nav-link py-2 relative" onClick={() => handleDropdownClick('forums')}>
+            <NavLink >Consumer Forms {!dropdown.forums ? <FontAwesomeIcon icon={faCaretDown} /> : <FontAwesomeIcon icon={faCaretUp} />}</NavLink>
+            {dropdown.forums && (
+                  <div className='absolute  right-0 w-52 mt-2 '>
+                    <div className='mt-1 bg-[#0D213D] rounded-lg '>
+                    <NavLink to="/consumer/info1" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">About CGRF</NavLink>
+                    <NavLink to="/consumer/info1" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Consumer Complaint Registration</NavLink>
+                    <NavLink to="/consumer/info1" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">CGRF Orders</NavLink>
+                    <NavLink to="/consumer/info1" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">CGRF Quarterly Reports</NavLink>
+                    <NavLink to="/consumer/info1" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Compensations Paid</NavLink>
+                    <NavLink to="/consumer/info1" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">APERC Directive on CGRF orders Implementation</NavLink>
+                    </div>
+                  </div>
+                )}
+                </div>
+
+
+
+            <div className="nav-link py-2 relative" onClick={() => handleDropdownClick('media')}>
+              
+            <NavLink  >Media Portal {!dropdown.media ? <FontAwesomeIcon icon={faCaretDown} /> : <FontAwesomeIcon icon={faCaretUp} />}</NavLink>
+            {dropdown.media && (
+              <div className='absolute  left-0 w-36 mt-2 '>
+                    <div className='mt-1 bg-[#0D213D] rounded-lg '>
+                    <NavLink to="/consumer/info1" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Press Releases</NavLink>
+                    <NavLink to="/consumer/info1" className="block px-4 py-2 hover:translate-x-2 hover:font-semibold ease-in-out duration-200 ">Photo Gallery</NavLink>
+                    </div>
+                  </div>
+                )}
+
+            </div>
+
+
+
+            <NavLink to="/employee-portal" className="nav-link py-2">Employee Portal </NavLink>
+
+
+
+
             <NavLink to="/careers" className="nav-link py-2">Careers</NavLink>
             <NavLink to="/contact-us" className="nav-link py-2">Contact Us</NavLink>
         </nav>

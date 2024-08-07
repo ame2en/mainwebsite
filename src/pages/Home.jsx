@@ -77,7 +77,7 @@ const Home = () => {
           <div className='relative h-full w-[5%]'>
 
             <img src={alert1} alt="" className='h-[100%] shadow-lg w-full object-cover object-right-center'/>
-            <span className=' absolute pl-2 h-full left-0 top-0 flex items-center font-bold'>
+            <span className=' absolute pl-2 h-full left-0 top-0 flex items-center font-bold text-start'>
               Alert
             </span>
 
@@ -90,7 +90,7 @@ const Home = () => {
           <div className='relative h-full w-[5%]'>
 
             <img src={alert2} alt="" className='h-[100%] shadow-lg w-full object-cover object-left-center'/>
-            <span className=' absolute pr-1 h-full right-0 top-0 flex items-center font-bold'>
+            <span className=' absolute pr-1 h-full right-0 top-0 flex items-center text-sm font-bold text-end'>
               <a href="">View All</a>
             </span>
 
