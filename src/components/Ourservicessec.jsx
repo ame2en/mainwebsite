@@ -23,11 +23,11 @@ const Ourservicessec = () => {
 
 
           <div className="flex justify-center items-center  ">
-          <div className="grid grid-cols-5 md:grid-cols-6 lg:grid-cols-7 gap-x-2.5 gap-y-2.5 my-[40px] ">
+          <div className="grid grid-cols-5  lg:grid-cols-7 gap-x-1 lg:gap-x-2.5 gap-y-2.5 my-[40px] ">
               <a href="https://www.google.com/">
 
               <div 
-                className="flex flex-col justify-between items-center bg-white border  rounded-lg p-4 shadow-md card  "
+                className="flex flex-col justify-between items-center bg-white border  md:w-[150px] md:h-[170px]  rounded-lg p-4 shadow-md card  "
                 style={{ height: '170px', width: '150px', }}>
                     <div className='flex justify-center items-center h-[100px] rainbow rounded-md p-4'>
 

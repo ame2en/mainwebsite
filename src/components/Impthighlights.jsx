@@ -8,12 +8,15 @@ import h2 from "../assets/icons/h2.svg";
 import h5 from "../assets/icons/h5.svg";
 
 const Impthighlights = () => {
+
+
+
+
+
+
+
+
   return (
-
-
-
-
-
         <div className='impt-highlights w-full  '> 
           <div className=' h-full w-[80%]  mx-auto rounded-[30px] objts bg-[#0D213D] py-4'>
             <p className=' text-[36px] font-bold text-white text-center'>Important Highlights <span className=' text-[#960E0E]'>|</span></p>
@@ -42,17 +45,12 @@ const Impthighlights = () => {
                 <img src={h3} alt="" className=' h-[120px] w-[120px] object-cover rounded-full border-white border-solid border-[10px] bg-black'  />
                 <div className=' text-white text-[36px] font-bold'>64</div>
                 <div className=' text-[20px] text-white font-bold'>Consumers</div>
-
-                
             </div>
 
               <div className=' flex flex-col  justify-center gap-2 items-center flex-grow border-r-[3px]' >
-                
-                
                 <img src={h4} alt="" className=' h-[120px] w-[120px] object-cover rounded-full border-white border-solid border-[10px] '  />
                 <div className=' text-white text-[36px] font-bold'>693</div>
                 <div className=' text-[20px] text-white font-bold'>33KV Feeders</div>
-                
             </div>
 
               <div className=' flex flex-col  justify-center gap-2 items-center flex-grow' >
