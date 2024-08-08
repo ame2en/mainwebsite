@@ -1,10 +1,10 @@
 import React, { useState,useRef,useEffect } from 'react';
 import "./nav.css";
 import { Link, NavLink } from 'react-router-dom';
-import logo1 from "../assets/topbarlogos/linkedin.svg"
-import logo2 from "../assets/topbarlogos/whatsapp.svg"
-import logo3 from "../assets/topbarlogos/insta.svg"
-import logo4 from "../assets/topbarlogos/X.svg"
+import icon1 from "../assets/topbarlogos/linkedin.svg"
+import icon2 from "../assets/topbarlogos/whatsapp.svg"
+import icon3 from "../assets/topbarlogos/insta.svg"
+import icon4 from "../assets/topbarlogos/X.svg"
 import logo from "../assets/mainlogo1.png";
 // import logo from "../assets/logo1.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -45,23 +45,23 @@ const NavBar = () => {
     <header className='z-[100] fixed bg-white shadow-xl h-[50px] md:h-[60px] lg:h-[90px] w-full '>
       <div className='relative w-full h-full '>
         <div className='topbar absolute top-0  h-[40%] w-full flex'>         
-          <div className=' relative   w-[85%] md:w-[87%] h-full  mx-[-10px]  '>
+          <div className=' relative   w-[80%] md:w-[87%] h-full  mx-[-10px]  '>
             <div className=' absolute top-0 left-0 w-full h-full bg-[#0C223D] skew-x-[-30deg] md:skew-x-[-20deg] rounded-br-md  md:rounded-br-xl shadow-lg'></div>
-            <div className=' text-white absolute top-0 left-0  h-full w-full flex items-center justify-between text-[5.5px] sm:text-[8px]  md:text-[11px] lg:text-[13px] px-4 md:px-6'> 
+            <div className=' text-white absolute top-0 left-0  h-full w-full flex items-center justify-between text-[5px] sm:text-[7px]  md:text-[11px] lg:text-[13px] px-4 md:px-6'> 
               <div>Supply Related Complaints  18004250028 (or) 1912.(24/7)</div>
               <div className=' '>CIN:U40109TG2000SGC034119 | GSTIN:36AABCN2875L3Z1</div>
             </div>
           </div>
-          <div className='  icons flex flex-row justify-center items-center  h-full  flex-grow gap-[2px] sm:gap-[3px]  md:gap-1 lg:gap-2'>
-              <img src={logo1} alt="" className=' h-[60%] md:h-[70%] lg:h-[80%]'/>
-              <img src={logo2} alt="" className='h-[60%] md:h-[70%] lg:h-[80%]'/>
-              <img src={logo3} alt="" className='h-[60%] md:h-[70%] lg:h-[80%]'/>
-              <img src={logo4} alt="" className='h-[60%] md:h-[70%] lg:h-[80%]'/>
+          <div className='  icons flex flex-row justify-center items-center  h-full  flex-grow gap-[4px] sm:gap-[3px]  md:gap-1 lg:gap-2'>
+              <img src={icon1} alt="" className=' h-[60%] md:h-[70%] lg:h-[80%]'/>
+              <img src={icon2} alt="" className='h-[60%] md:h-[70%] lg:h-[80%]'/>
+              <img src={icon3} alt="" className='h-[60%] md:h-[70%] lg:h-[80%]'/>
+              <img src={icon4} alt="" className='h-[60%] md:h-[70%] lg:h-[80%]'/>
           </div>
         </div>
 
         <div className=' absolute h-[60%] left-0 bottom-0  flex items-center'>
-          <img src={logo} alt="" className=' h-full ml-2 md:ml-6'/>
+          <img src={logo} alt="" className='h-full ml-2 md:ml-6'/>
         </div>
 
         <div className=' absolute bottom-0 right-0 h-[50%] w-[80%] sm:w-[80%] md:w-[85%] mr-[-1rem]'>
@@ -69,7 +69,7 @@ const NavBar = () => {
             <div className='absolute top-0 right-0 h-full w-full skew-x-[-40deg] md:skew-x-[-30deg] bg-[#0C223D] rounded-tl-md  md:rounded-tl-xl'></div>
           
           <nav className=" relative text-white  h-full w-full pl-[1rem] md:pl-[2rem] pr-[1.2rem] md:pr-[1.5rem] flex justify-between items-center text-[7px] md:text-[9px] lg:text-[12px] xl:text-base">
-            <NavLink to="/" className="nav-link   py-2" >Home</NavLink>
+            <NavLink to="/" className="nav-link   py-2">Home</NavLink>
             
             
             
